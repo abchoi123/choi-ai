@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="image" href="./hero-poster.jpg" fetchpriority="high" />
+    <meta
+      name="description"
+      content="蔡宇超 Choi · AI 商业化/解决方案/商务拓展 · 诺丁汉大学硕士"
+    />
+    <title>蔡宇超 Choi · AI 商业化 / 解决方案 / 商务拓展</title>
+    <style>
+      body {
+        background: #020810;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-NRAyZYBA.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DF0Ke6Rk.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 纯 HTML 加载提示：不依赖 JS 包，打开页面即应可见；JS 启动后由 main.tsx 移除 -->
+    <div
+      id="boot-hint"
+      style="position: fixed; inset: 0; z-index: 98; display: flex; align-items: center; justify-content: center; background: #020810; color: #64748b; font: 14px/1.8 sans-serif; letter-spacing: 0.3em"
+    >
+      正在加载页面…
+    </div>
+    <script>
+      // 启动自诊断：JS 出错时记录，6 秒后应用仍未挂载则把原因显示在屏幕上
+      window.__bootError = ''
+      window.addEventListener('error', function (e) {
+        if (!window.__appMounted) {
+          window.__bootError = e.message || '资源加载失败'
+        }
+      })
+      window.__bootTimer = window.setTimeout(function () {
+        if (!window.__appMounted) {
+          var hint = document.getElementById('boot-hint')
+          if (hint) hint.remove()
+          var d = document.createElement('div')
+          d.style.cssText =
+            'position:fixed;inset:0;z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:32px;background:#020810;color:#e2e8f0;font:14px/1.8 sans-serif;text-align:center'
+          d.innerHTML =
+            '<div style="font-size:16px;color:#67e8f9">页面脚本未能启动</div>' +
+            '<div>请截图本页反馈 · 诊断信息：</div>' +
+            '<div style="color:#f87171;word-break:break-all">' +
+            (window.__bootError || 'unknown') +
+            '</div>' +
+            '<div style="color:#64748b;font-size:12px">' +
+            navigator.userAgent +
+            '</div>'
+          document.body.appendChild(d)
+        }
+      }, 6000)
+    </script>
+  </body>
+</html>
